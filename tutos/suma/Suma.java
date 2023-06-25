@@ -1,5 +1,8 @@
 package tutos.suma;
- 
+/* By @itsyoungalien (Young Alien)
+ * version 1.0.0
+ * 25/05/2023
+ */
 public class Suma{
     private int VUno, VDos, Resultado;
 
