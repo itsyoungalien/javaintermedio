@@ -59,4 +59,11 @@ public class LLFunciones{
             System.out.println("Parece que algo anda mal, revisa que el secado haya finalizado.");
         }
     }
+    // metodos getter y setter
+    public int getTipoDeRopa(){
+        return TipoDeRopa;
+    }
+    public void setTipoDeRopa(int TipoDeRopa){
+        this.TipoDeRopa = TipoDeRopa;
+    }
 }

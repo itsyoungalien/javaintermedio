@@ -19,6 +19,7 @@ public class LavadoraMain {
 
         // procesamiento de datos
         LLFunciones mensajero = new LLFunciones(kilos, TipoDeRopa);
+        mensajero.setTipoDeRopa(2);
         mensajero.CicloFinalizado();
     }
 }
