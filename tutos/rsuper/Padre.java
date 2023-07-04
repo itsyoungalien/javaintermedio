@@ -1,5 +1,5 @@
 package tutos.rsuper;
-/* Created By Youngg Alien | @itsyoungalien
+/* Created By Young Alien | @itsyoungalien
  * Date 04/07/2023
  * Version 1.0.0
  */ 
