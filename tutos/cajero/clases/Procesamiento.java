@@ -1,10 +1,10 @@
 package tutos.cajero.clases;
 import java.util.Scanner;
 /* Created by Young Alien | @itsyoungalien
- * Version 1.0.0
- * Date 08/07/2023
+ * Version 1.0.1
+ * Date 09/07/2023
  */
-public class Procesamiento{
+public abstract class Procesamiento{
     protected int transacciones, retiro, deposito;
     private static int saldo;
     Scanner data = new Scanner(System.in);
@@ -31,16 +31,38 @@ public class Procesamiento{
                 }
             } while(bandera == 0);
             if(opcion == 1){
-
+                Procesamiento abc = new Retiro();
+                abc.Transacciones();
             } else if(opcion ==2){
-
+                Procesamiento abc = new Deposito();
+                abc.Transacciones();
             } else if(opcion ==3){
-
+                Procesamiento abc = new Consulta();
+                abc.Transacciones();
             } else if(opcion == 4){
                 System.out.println("-------------------");
                 System.out.println("Sesion finalizada.");
                 System.out.println("-------------------");
+                bandera = 2;
             }
         } while(bandera != 2);
+    }
+    // metodo para retiro
+    public void Retiro(){
+        retiro = data.nextInt();
+    }
+    // metodo para deposito
+    public void Deposito(){
+        deposito = data.nextInt();
+    }
+    // metodo abstracto
+    public abstract void Transacciones();
+
+    // metodos setter y getter
+    public int getSaldo(){
+        return saldo;
+    }
+    public void setSaldo(int saldo){
+        this.saldo = saldo;
     }
 }
