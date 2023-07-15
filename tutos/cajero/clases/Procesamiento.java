@@ -1,7 +1,7 @@
 package tutos.cajero.clases;
 import java.util.Scanner;
 /* Created by Young Alien | @itsyoungalien
- * Version 1.0.1
+ * Version 1.0.2
  * Date 09/07/2023
  */
 public abstract class Procesamiento{
@@ -13,15 +13,16 @@ public abstract class Procesamiento{
     public void Operaciones(){
         int bandera = 0, opcion = 0;
         do{
-            System.out.println("--------------------------------");          
-            System.out.println("Selecciona una opcion:");
-            System.out.println("    1.Retiro de efectivo.");
-            System.out.println("    2.Deposito de fectivo.");
-            System.out.println("    3.Consultar saldo.");
-            System.out.println("    4.Salir.");
-            opcion = data.nextInt();
-            System.out.println("--------------------------------");
             do{
+                System.out.println("--------------------------------");          
+                System.out.println("Selecciona una opcion:");
+                System.out.println("    1.Retiro de efectivo.");
+                System.out.println("    2.Deposito de fectivo.");
+                System.out.println("    3.Consultar saldo.");
+                System.out.println("    4.Salir.");
+                opcion = data.nextInt();
+                System.out.println("--------------------------------");
+
                 if(opcion >= 1 && opcion <= 4){
                     bandera = 1;
                 } else{
