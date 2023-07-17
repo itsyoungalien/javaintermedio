@@ -7,6 +7,7 @@ package tutos.threads2;
 public class Proceso extends Thread{
     int num;
 
+    // metodo para asignar un nombre a los hilos desde clase main
     public Proceso(String nombre){
         super(nombre);
     }
@@ -18,6 +19,7 @@ public class Proceso extends Thread{
         System.out.println("");
     }
     
+    // metodo para asignar un valor a los hilos desde clase main
     public void Valor(int valor){
         this.num = valor;
     }

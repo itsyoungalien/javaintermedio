@@ -6,10 +6,13 @@ package tutos.threads2;
  */
 public class ClasePrincipal{
     public static void main(String[] args){
+
+        // asignando nombre a los hilos
         Proceso abc1 = new Proceso("-Hilo 1");
         Proceso abc2 = new Proceso("-Hilo 2");
         Proceso abc3 = new Proceso("-Hilo 3");
 
+        // valor para cada hilo
         abc1.Valor(5);
         abc2.Valor(10);
         abc3.Valor(7);
